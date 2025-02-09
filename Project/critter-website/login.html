@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="logstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="image-side">
+                <img src="pets.png" alt="Placeholder">
+            </div>
+            <div class="forms-side">
+                <div class="login-form active">
+                    <h2>Welcome to log in</h2>
+                    <p class="switch-text">Don't have an account? <a href="#" onclick="switchForm('signup')">Sign up</a></p>
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Log In</button>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <h2>Create new account</h2>
+                    <p class="switch-text">Already have an account? <a href="#" onclick="switchForm('login')">Sign in</a></p>
+                    <form>
+                        <div class="form-group">
+                            <label for="signup-name">Name</label>
+                            <input type="text" id="signup-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-dob">Date of Birth</label>
+                            <input type="date" id="signup-dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-hospital">Hospital (Optional)</label>
+                            <input type="text" id="signup-hospital">
+                        </div>
+                        <button type="submit" class="submit-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="logscript.js"></script>
+</body>
+</html>
+
